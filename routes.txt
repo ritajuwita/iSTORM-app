@@ -1,0 +1,34 @@
+(in /home/ritajuwita/htdocs/Fellownation/project/standar-corporate-app)
+              root        /                                      {:action=>"index", :controller=>"walls"}
+             admin        /admin                                 {:action=>"admin", :controller=>"home"}
+         save_info        /admin/info/save                       {:action=>"save_info", :controller=>"home"}
+         save_file        /admin/file/save                       {:method=>:post, :action=>"save_file", :controller=>"home"}
+       remove_file        /admin/file/:id/remove(.:format)       {:action=>"remove_file", :controller=>"home"}
+         send_file        /admin/file/:id/send                   {:action=>"send_file", :controller=>"home"}
+              info        /info                                  {:action=>"info", :controller=>"home"}
+      access_token        /access_token                          {:action=>"access_token", :controller=>"application"}
+      post_message        /message/post                          {:method=>:post, :action=>"post_message", :controller=>"walls"}
+      like_message        /message/like/:message_id              {:method=>:post, :action=>"like_message", :controller=>"walls"}
+    unlike_message        /message/unlike/:message_id            {:method=>:post, :action=>"unlike_message", :controller=>"walls"}
+  favorite_message        /message/favorite/:message_id          {:method=>:post, :action=>"favorite_message", :controller=>"walls"}
+unfavorite_message        /message/unfavorite/:message_id        {:method=>:post, :action=>"unfavorite_message", :controller=>"walls"}
+   comment_message        /message/comment/:message_id           {:method=>:post, :action=>"comment_message", :controller=>"walls"}
+    delete_message        /message/:message_id/delete            {:method=>:delete, :action=>"delete_message", :controller=>"walls"}
+ show_all_comments        /message/:message_id/show_all_comments {:method=>:get, :action=>"show_all_comments", :controller=>"walls"}
+    delete_comment        /message/comment/:comment_id/delete    {:method=>:delete, :action=>"delete_comment", :controller=>"walls"}
+         show_more        /message/show_more/page/:page          {:method=>:get, :action=>"show_more", :controller=>"walls"}
+              jobs GET    /jobs(.:format)                        {:action=>"index", :controller=>"jobs"}
+                   POST   /jobs(.:format)                        {:action=>"create", :controller=>"jobs"}
+           new_job GET    /jobs/new(.:format)                    {:action=>"new", :controller=>"jobs"}
+          edit_job GET    /jobs/:id/edit(.:format)               {:action=>"edit", :controller=>"jobs"}
+         apply_job POST   /jobs/:id/apply(.:format)              {:action=>"apply", :controller=>"jobs"}
+               job GET    /jobs/:id(.:format)                    {:action=>"show", :controller=>"jobs"}
+                   PUT    /jobs/:id(.:format)                    {:action=>"update", :controller=>"jobs"}
+                   DELETE /jobs/:id(.:format)                    {:action=>"destroy", :controller=>"jobs"}
+             walls GET    /walls(.:format)                       {:action=>"index", :controller=>"walls"}
+                   POST   /walls(.:format)                       {:action=>"create", :controller=>"walls"}
+          new_wall GET    /walls/new(.:format)                   {:action=>"new", :controller=>"walls"}
+         edit_wall GET    /walls/:id/edit(.:format)              {:action=>"edit", :controller=>"walls"}
+              wall GET    /walls/:id(.:format)                   {:action=>"show", :controller=>"walls"}
+                   PUT    /walls/:id(.:format)                   {:action=>"update", :controller=>"walls"}
+                   DELETE /walls/:id(.:format)                   {:action=>"destroy", :controller=>"walls"}

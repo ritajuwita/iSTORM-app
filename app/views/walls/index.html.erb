@@ -1,0 +1,26 @@
+<div>
+  <div class="pic_header detail_content float_left margin_padding">
+    <div>
+      <% form_remote_tag :url => post_message_path, :method => :post,
+            :loading => "$('spinner_share').show(); $('button_share').hide()",
+            :complete => "$('spinner_share').hide(); $('button_share').show()" do %>
+        <div><textarea class="content_textarea rtbf_height font-wall" name="message" id="message_text_area"></textarea></div>
+        <%= submit_tag "Share", :class => "float_right sendBtn", :id => "button_share" %>
+        <%= image_tag 'spinner.gif', :class => "float_right", :style => "display: none", :id => 'spinner_share' %>
+      <% end %>
+    </div>
+    <div class="app_clear">&nbsp;</div>
+    <div id="message_list">
+      <% unless @wall_messages.blank?
+          @wall_messages.each do |wm| %>
+             <%= render :partial => "message_list", :locals => { :message => wm } %>
+      <%  end
+         end%>
+    </div>
+    <div id ="show_more" class="more_app">
+      <%= render :partial => "show_more", :locals => {:index => 2} %>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+

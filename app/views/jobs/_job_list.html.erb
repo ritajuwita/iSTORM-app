@@ -1,0 +1,19 @@
+<span id="job_<%= job.id %>">
+  <div>
+    <div class="float_left padding-bottom">
+      <p class="p_jobs"><%= job.date %></p>
+    </div>
+    <div class="float_left rtbf_margin">
+      <p class="p_jobs centering"><%= job.job_title %></p>
+    </div>
+    <div class="float_left rtbf_margin">
+      <p class="p_jobs centering"><%= job.location %></p>
+    </div>
+    <div class="float_right">
+      <%= button_to_remote "Delete", :url => job_path(job), :method => :delete, :confirm => 'Are you sure?' %>
+    </div>
+    <div class="clear"></div>
+    <div class="separator"></div>
+  </div>
+  <div class="app_clear">&nbsp;</div>
+</span>

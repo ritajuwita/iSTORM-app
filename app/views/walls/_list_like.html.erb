@@ -1,0 +1,10 @@
+<% if !likes.blank? && likes != "no result"
+  names = []
+  likes.each do |x|
+    names << (x["user_id"].to_s == session[:fellownation_user_id] ? "You" : x["name"])
+  end
+%>
+  <div class="wallContent like">
+    <%= names.to_sentence  %>
+  </div>
+<% end %>

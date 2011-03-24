@@ -7,9 +7,9 @@ if RAILS_ENV == 'development' || RAILS_ENV == 'test' || RAILS_ENV == 'cucumber'
   WEBSERVIUS_KEY = "Dbsv8wmfax2J5xzAK7_KZ7qrXIiXWR1j"
 else
   SITE = 'http://fellownation.com'
-  FKEY = "zduBQMNOz9pjXgbOWRio"
-  FSECRET = "stSDN6YIRsryEE4wumWPdUkqxhVJUP2qZmtHbBXW"
+  FKEY = "xnlljFSjIFSYY2shESeL"
+  FSECRET = "ioZqVFmguJHPuJfY6khduuxjlEQDBewYAICO1qkO"
   IFRAME_HELPER = "http://apps.fellownation.com/iframe_helper.html"
   WEBSERVIUS_PATH = "http://api.fellownation.com"
-  WEBSERVIUS_KEY = "Dbsv8wmfax2J5xzAK7_KZ7qrXIiXWR1j"
+  WEBSERVIUS_KEY = "310LphNaOkbYd2-gcmyNemo-Dl5LGZ-g"
 end

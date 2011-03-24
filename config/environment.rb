@@ -46,4 +46,3 @@ Rails::Initializer.run do |config|
     :secret      => 'dhsajkKLSJdkladsakdamdaklsi12jemdksddjkadmakdlji32390JdKDSDJa0edjkadhsaj@ONDKwmcmkcl'
   }
 end
-require 'oauth/consumer'

@@ -1,5 +1,5 @@
 .a_href{
-    color: #288AB3;
+    color: #CC0000;
     font-size: 10px;
 }
 .app_clear{
@@ -29,7 +29,7 @@
 .detail_content{
     height: auto;
     overflow: hidden;
-    border: 3px solid #288AB3;
+    border: 3px solid #CC0000;
 }
 .content{
     width: 760px;
@@ -44,7 +44,7 @@
     color: blue;
 }
 .content_header{
-    background: #288AB3;
+    background: #CC0000;
     border: 1px solid;
     color: white;
     padding: 5px;
@@ -95,7 +95,7 @@
     text-align:center;
 }
 .head_bg{
-    background: url("/images/tabs.png") repeat-x scroll 0 0 #5599BB;
+    background: none repeat-x scroll 0 0 #CC0000;
     color: #FFFFFF;
 }
 th{
@@ -193,20 +193,20 @@ th{
     font-size: 10px;
 }
 .wallContent {
-    background: none repeat scroll 0 0 #DDEDF6;
+    background: none repeat scroll 0 0 #CC0000;
     margin-bottom: 3px;
     padding: 5px;
 }
 .wallContent.like {
-    background: url("/images/like.png") no-repeat scroll 5px 50% #DDEDF6;
+    background: url("/images/like.png") no-repeat scroll 5px 50% #CC0000;
     padding: 5px 10px 5px 25px;
 }
 .wallContent.star {
-    background: url("/images/star.png") no-repeat scroll 5px 50% #DDEDF6;
+    background: url("/images/star.png") no-repeat scroll 5px 50% #CC0000;
     padding: 5px 10px 5px 25px;
 }
 .wallContent.comment {
-    background: url("/images/comment.png") no-repeat scroll 5px 50% #DDEDF6;
+    background: url("/images/comment.png") no-repeat scroll 5px 50% #CC0000;
     padding: 5px 10px 5px 25px;
 }
 /*fellownation tab*/
@@ -220,13 +220,13 @@ th{
     width: 163px;
 }
 #tabsnav .selected a{
-    background: url("/images/tabs.png") repeat-x scroll 0 0 #5599BB;
+    background: none repeat-x scroll 0 0 #000000;
     color: #FFFFFF;
 }
 #tabsnav li a {
-    background: none repeat scroll 0 0 #DDEDF6;
-    border: 1px solid #288AB3;
-    color: #000000;
+    background: none repeat scroll 0 0 #CC0000;
+    border: 1px solid #CC0000;
+    color: #FFFFFF;
     display: block;
     font-size: 14px;
     font-weight: bold;
@@ -252,7 +252,7 @@ h1{
     font-size: 16px;
 }
 .more_app{
-    background: none repeat scroll 0 0 #DDEDF6;
+    background: none repeat scroll 0 0 #CC0000;
     height: 25px;
     line-height: 24px;
     margin: 5px;
@@ -278,7 +278,7 @@ h1{
     color: #fff
 }
 .wallContent {
-    background: none repeat scroll 0 0 #DDEDF6;
+    background: none repeat scroll 0 0 #CC0000;
     margin-bottom: 3px;
     padding: 5px;
 }

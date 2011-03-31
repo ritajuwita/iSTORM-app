@@ -95,7 +95,10 @@
     text-align:center;
 }
 .head_bg{
-    background: none repeat-x scroll 0 0 #CC0000;
+    background: #CC0000; /* old browsers */
+    background: -moz-linear-gradient(top, #FFFFFF 1%, #CC0000 99%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#FFFFFF), color-stop(99%,#CC0000)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#CC0000',GradientType=0 ); /* ie */
     color: #FFFFFF;
 }
 th{
@@ -224,7 +227,10 @@ th{
     color: #FFFFFF;
 }
 #tabsnav li a {
-    background: none repeat scroll 0 0 #CC0000;
+    background: #CC0000; /* old browsers */
+    background: -moz-linear-gradient(top, #FFFFFF 1%, #CC0000 99%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#FFFFFF), color-stop(99%,#CC0000)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#CC0000',GradientType=0 ); /* ie */
     border: 1px solid #CC0000;
     color: #FFFFFF;
     display: block;

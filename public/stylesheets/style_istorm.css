@@ -1,0 +1,305 @@
+.a_href{
+    color: #CC0000;
+    font-size: 10px;
+}
+.app_clear{
+    clear: both;
+}
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+.margin_padding{
+    margin: 5px;
+    padding: 5px;
+}
+.padding_only{
+		padding: 5px;
+}
+.pic_header{
+    width: 738px;
+    height: 80px;
+    background-color: white;
+}
+.pic_footer{
+    height: 200px;
+}
+.detail_content{
+    height: auto;
+    overflow: hidden;
+    border: 3px solid #CC0000;
+}
+.content{
+    width: 760px;
+}
+.content ul{
+    list-style-type: none;
+}
+.content li{
+    display: inline-block;
+}
+.detail_content li a:hover{
+    color: blue;
+}
+.content_header{
+    background: #CC0000;
+    border: 1px solid;
+    color: white;
+    padding: 5px;
+}
+.content_textarea{
+    left: 1px;
+    position: relative;
+    top: -1px;
+    width: 722px;
+    border: 2px solid #EEEEEE;
+    padding: 5px;
+}
+.content_textarea_info{
+    left: 1px;
+    position: relative;
+    top: -1px;
+    width: 733px;
+}
+.info_href{
+    color: #DDEDF6;
+}
+.textarea_job{
+    width: 390px;
+    border: 2px solid #EEEEEE;
+}
+.admin_job_left{
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.admin_job_right{
+    width: 300px;
+    margin-top: 5px;
+}
+.separator{
+    border: 1px solid black;
+}
+.separator_bottom{
+    border-bottom: 1px solid #c0c0c0;
+    padding: 5px;
+}
+.p_jobs{
+    font-size: 10pt;
+    font-family:  "Lucida Grande", "Lucida Sans", "Neutraface 2 Bold Italic", "Neutraface 2 Bold",  "Nimbus Sans L";
+    margin: 5px 0px;
+}
+.detail_content td, .detail_content th {
+    text-align:center;
+}
+.head_bg{
+    background: #CC0000; /* old browsers */
+    background: -moz-linear-gradient(top, #FFFFFF 1%, #CC0000 99%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#FFFFFF), color-stop(99%,#CC0000)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#CC0000',GradientType=0 ); /* ie */
+    color: #FFFFFF;
+}
+th{
+    padding: 5px;
+}
+.even, thead{
+    background-color: #DDEDF6;
+}
+.odd{
+    background-color: white;
+}
+.col1{
+    width: 140px;
+}
+.col2{
+    width: 503px;
+}
+.col3{
+    width: 453px;
+}
+.avatar_container_comment{
+    width: 50px;
+    height: 50px;
+}
+.main_avatar_container{
+    width: 50px;
+    height: 67px;
+    margin-right: 10px;
+}
+.avatar{
+    width: 36px;
+    height: 36px;
+}
+.newavatar{
+    float: left;
+    height: 170px;
+    margin-right: 10px;
+    width: 128px;
+}
+.message_container{
+    height: auto;
+    margin-left: 5px;
+    width: 618px;
+    padding: 5px;
+}
+.comment_on_comment{
+    width: 591px;
+    padding: 5px;
+}
+.other_user_comment{
+    height: auto;
+    margin-left: 5px;
+    padding: 5px;
+    width: 520px;
+}
+.sendBtn{
+    -moz-border-radius: 5px;
+    background: url("/images/button3.png") repeat scroll 0 0 #D9D8D8;
+    border: 1px solid #C0C0C0;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.message_list{
+    border-bottom: 1px solid #C0C0C0;
+}
+/*avatar badge*/
+.badge{
+    width: 50px;
+    height: 14px;
+    padding-top:3px;
+}
+.thumb{
+    height: 14px;
+    width: 14px;
+    float: left;
+}
+.wallBadge {
+    float: left;
+    height: 14px;
+    margin-right: 10px;
+    width: 14px;
+}
+/*like a comment*/
+.firstEntry {
+    background: url("/images/first.png") no-repeat scroll 10px 0 transparent;
+    height: 5px;
+    line-height: 5px;
+    overflow: hidden;
+}
+.time{
+    font-size: 10px;
+}
+.wallContent {
+    background: none repeat scroll 0 0 #CC0000;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+.wallContent.like {
+    background: url("/images/like.png") no-repeat scroll 5px 50% #CC0000;
+    padding: 5px 10px 5px 25px;
+}
+.wallContent.star {
+    background: url("/images/star.png") no-repeat scroll 5px 50% #CC0000;
+    padding: 5px 10px 5px 25px;
+}
+.wallContent.comment {
+    background: url("/images/comment.png") no-repeat scroll 5px 50% #CC0000;
+    padding: 5px 10px 5px 25px;
+}
+/*fellownation tab*/
+#tabsnav li {
+    float: left;
+    margin-right: -1px;
+}
+#tabsnav li a{
+    line-height: 23px;
+    padding: 5px 10px;
+    width: 163px;
+}
+#tabsnav .selected a{
+    background: none repeat-x scroll 0 0 #000000;
+    color: #FFFFFF;
+}
+#tabsnav li a {
+    background: #CC0000; /* old browsers */
+    background: -moz-linear-gradient(top, #FFFFFF 1%, #CC0000 99%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#FFFFFF), color-stop(99%,#CC0000)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#CC0000',GradientType=0 ); /* ie */
+    border: 1px solid #CC0000;
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+/*info*/
+.newavatar img {
+    display: block;
+    height: 128px ;
+    width: 128px ;
+}
+.newavatar img.mybadge {
+    height: 37px !important;
+    margin-top: 5px;
+    width: 128px !important;
+}
+.myinlineLink {
+    float: left;
+    margin-right: 15px;
+}
+h1{
+    font-size: 16px;
+}
+.more_app{
+    background: none repeat scroll 0 0 #CC0000;
+    height: 25px;
+    line-height: 24px;
+    margin: 5px;
+    padding-left: 15px;
+}
+.left_tabs{
+		margin-left: 5px;
+}
+.padding-bottom{
+		padding-bottom: 5px;
+}
+.submitBtn2 {
+    padding: 3px 10px;
+    border: 1px solid #94c1d3;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(/js/PIE.htc);
+    background: url(/images/button4.png) 0 0 repeat-x;
+    float: right;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #fff
+}
+.wallContent {
+    background: none repeat scroll 0 0 #CC0000;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+.rtbf_height{
+		height: 100px;
+}
+.rtbf_margin{
+		margin-left: 20px;
+}
+
+.font-wall{
+  font-family:  "Lucida Grande", "Lucida Sans", "Neutraface 2 Bold Italic", "Neutraface 2 Bold",  "Nimbus Sans L";
+  font-size: 12px;
+}
+
+td.text-left{
+  text-align:left;
+}

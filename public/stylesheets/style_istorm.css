@@ -143,6 +143,7 @@ th{
     margin-left: 5px;
     width: 618px;
     padding: 5px;
+    color: white;
 }
 .comment_on_comment{
     width: 591px;
@@ -264,6 +265,11 @@ h1{
     margin: 5px;
     padding-left: 15px;
 }
+
+#link_more{
+    color: white;
+}
+
 .left_tabs{
 		margin-left: 5px;
 }

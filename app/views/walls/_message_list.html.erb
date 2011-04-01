@@ -71,7 +71,7 @@
         <div class="wallContent comment">
           <%= link_to_remote 'View all comments', { :url => show_all_comments_path(message["id"]), :method => :get,
             :loading => "$('spinner_comment_#{message["id"]}').show(); $('link_comment_#{message["id"]}').hide()",
-            :complete => "$('spinner_comment_#{message["id"]}').hide(); $('link_comment_#{message["id"]}').show()" }, :id => 'link_comment_'+message["id"].to_s, :class => "a_href" %>
+            :complete => "$('spinner_comment_#{message["id"]}').hide(); $('link_comment_#{message["id"]}').show()" }, :id => 'link_comment_'+message["id"].to_s, :class => "a_href all_comment" %>
           <%= image_tag 'spinner.gif', :style => "display: none", :id => 'spinner_comment_'+message["id"].to_s %>
         </div>
       <% end %>

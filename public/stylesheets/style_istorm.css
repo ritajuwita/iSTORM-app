@@ -228,8 +228,9 @@ a.all_comment{
     width: 163px;
 }
 #tabsnav .selected a{
-    background: none repeat-x scroll 0 0 #000000;
+    background-color: #000000;
     color: #FFFFFF;
+    position: relative;
 }
 #tabsnav li a {
     background: #CC0000; /* old browsers */

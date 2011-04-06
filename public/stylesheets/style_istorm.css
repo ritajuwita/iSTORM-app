@@ -229,10 +229,7 @@ a.all_comment{
 }
 
 #tabsnav li a {
-    background: #CC0000; /* old browsers */
-    background: -moz-linear-gradient(top, #FFFFFF 1%, #CC0000 99%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#FFFFFF), color-stop(99%,#CC0000)); /* webkit */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#CC0000',GradientType=0 ); /* ie */
+    background: url("/images/red_menu.png") repeat-x;
     border: 1px solid #CC0000;
     color: #FFFFFF;
     display: block;

@@ -222,16 +222,12 @@ a.all_comment{
     float: left;
     margin-right: -1px;
 }
-#tabsnav li a{
-    line-height: 23px;
-    padding: 5px 10px;
-    width: 163px;
-}
 #tabsnav .selected a{
     background-color: #000000;
     color: #FFFFFF;
     position: relative;
 }
+
 #tabsnav li a {
     background: #CC0000; /* old browsers */
     background: -moz-linear-gradient(top, #FFFFFF 1%, #CC0000 99%); /* firefox */
@@ -242,8 +238,10 @@ a.all_comment{
     display: block;
     font-size: 14px;
     font-weight: bold;
-    padding: 5px;
     text-align: center;
+    line-height: 23px;
+    padding: 5px 10px;
+    width: 163px
 }
 /*info*/
 .newavatar img {

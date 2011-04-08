@@ -16,7 +16,7 @@
       <span id="delete">
         <%= link_to_remote 'Delete', { :url => delete_comment_path(comment["id"]), :confirm => "Are you sure?", :method => :delete,
           :loading => "$('spinner_delete_#{comment["id"]}').show(); $('link_delete_#{comment["id"]}').hide()",
-          :complete => "$('spinner_delete_#{comment["id"]}').hide(); $('link_delete_#{comment["id"]}').show()" }, :id => 'link_delete_'+comment["id"].to_s, :class => "a_href" %>
+          :complete => "$('spinner_delete_#{comment["id"]}').hide(); $('link_delete_#{comment["id"]}').show()" }, :id => 'link_delete_'+comment["id"].to_s, :class => "a_href delete_comment" %>
         <%= image_tag 'spinner.gif', :style => "display: none", :id => 'spinner_delete_'+comment["id"].to_s %>
       </span>
     <% end %>

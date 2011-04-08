@@ -222,27 +222,24 @@ a.all_comment{
     float: left;
     margin-right: -1px;
 }
-#tabsnav li a{
-    line-height: 23px;
-    padding: 5px 10px;
-    width: 163px;
-}
 #tabsnav .selected a{
-    background: none repeat-x scroll 0 0 #000000;
+    background-color: #000000;
     color: #FFFFFF;
+    position: relative;
 }
-#tabsnav li a {
-    background: #CC0000; /* old browsers */
-    background: -moz-linear-gradient(top, #FFFFFF 1%, #CC0000 99%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#FFFFFF), color-stop(99%,#CC0000)); /* webkit */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#CC0000',GradientType=0 ); /* ie */
-    border: 1px solid #CC0000;
+
+#tabsnav li a { 
+/*background: url("/images/red_menu.png") repeat-x;*/
+background-color: #c60b00;
+    border: 1px solid #f18d8d;
     color: #FFFFFF;
     display: block;
     font-size: 14px;
     font-weight: bold;
-    padding: 5px;
     text-align: center;
+    line-height: 23px;
+    padding: 5px 10px;
+    width: 163px
 }
 /*info*/
 .newavatar img {
@@ -309,6 +306,14 @@ h1{
 		margin-left: 20px;
 }
 
+.button_text{
+    font-size: 10px;
+    padding-right: 3px;
+    padding-left: 3px;
+    display: block;
+    font-weight: bold;
+}
+
 .font-wall{
   font-family:  "Lucida Grande", "Lucida Sans", "Neutraface 2 Bold Italic", "Neutraface 2 Bold",  "Nimbus Sans L";
   font-size: 12px;
@@ -320,4 +325,8 @@ td.text-left{
 
 .delete_comment{
     color:#FFFFFF;
+}
+
+.istorm_wall{
+    color: #000000;
 }

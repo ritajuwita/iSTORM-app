@@ -228,16 +228,9 @@ a.all_comment{
     position: relative;
 }
 
-<<<<<<< HEAD
 #tabsnav li a {
-    background: url("/images/red_menu.png") repeat-x;
-    border: 1px solid #CC0000;
-=======
-#tabsnav li a { 
-/*background: url("/images/red_menu.png") repeat-x;*/
-background-color: #c60b00;
+    background-color: #c60b00;
     border: 1px solid #f18d8d;
->>>>>>> 70505249976508a7e80f737d8ec52c7359f65773
     color: #FFFFFF;
     display: block;
     font-size: 14px;

@@ -329,6 +329,10 @@ td.text-left{
   text-align:left;
 }
 
+.delete_comment{
+    color:#FFFFFF;
+}
+
 .istorm_wall{
     color: #000000;
 }

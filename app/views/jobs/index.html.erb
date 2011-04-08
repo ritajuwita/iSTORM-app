@@ -1,32 +1,21 @@
 <div>
   <div class="pic_header detail_content float_left margin_padding">
-    <table width="100%">
+    <table width="100%" cellpadding="0" cellspacing="0">
       <col class="col1"/>
       <col class="col2"/>
       <col class="col3"/>
       <col class="col1"/>
-      <thead>
-        <tr class="head_bg">
-          <th class="col1">Date</th>
-          <th>Job Title</th>
-          <th>Location</th>
-          <th>&nbsp;</th>
-        </tr>
-      </thead>
       <tbody>
       <% @jobs.each do |job| %>
-        <tr>
+        <tr style="background: #c60b00; text-transform: uppercase; color: white; font-weight: bold;">
           <td class="separator_bottom col1"><%= job.date %></td>
           <td class="separator_bottom text-left"><%= truncate(job.job_title,100) %></td>
           <td class="separator_bottom text-left"><%= job.location %></td>
-          <td class="separator_bottom"><%= button_to_remote "Apply", {:url => apply_job_path(job), :loading => "$('spinner_job_#{job.id}').show();;$('apply_job_#{job.id}').hide();", :success => "$('spinner_job_#{job.id}').hide();$('apply_job_#{job.id}').show()"}, {:id => "apply_job_#{job.id}"} %>
+          <td class="separator_bottom"><%= button_to_remote "Apply", {:url => apply_job_path(job), :loading => "$('spinner_job_#{job.id}').show();;$('apply_job_#{job.id}').hide();", :success => "$('spinner_job_#{job.id}').hide();$('apply_job_#{job.id}').show()"}, {:id => "apply_job_#{job.id}",:class => 'button_text'} %>
                                        <%= image_tag "spinner.gif", {:id => "spinner_job_#{job.id}", :style => "display:none;"} %></td>
         </tr>
         <tr>
-          <td class="separator_bottom">&nbsp;</td>
-          <td class="separator_bottom text-left"><%= truncate(job.body,100) %></td>
-          <td class="separator_bottom">&nbsp;</td>
-          <td class="separator_bottom">&nbsp;</td>
+          <td class="separator_bottom text-left" colspan="4"><%= truncate(job.body,100) %></td>
         </tr>
       </tbody>
     <% end %>

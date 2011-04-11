@@ -9,13 +9,13 @@
       <% @jobs.each do |job| %>
         <tr style="background: #c60b00; text-transform: uppercase; color: white; font-weight: bold;">
           <td class="separator_bottom col1"><%= job.date %></td>
-          <td class="separator_bottom text-left"><%= truncate(job.job_title,100) %></td>
+          <td class="separator_bottom text-left"><%= job.job_title %></td>
           <td class="separator_bottom text-left"><%= job.location %></td>
           <td class="separator_bottom"><%= button_to_remote "Apply", {:url => apply_job_path(job), :loading => "$('spinner_job_#{job.id}').show();;$('apply_job_#{job.id}').hide();", :success => "$('spinner_job_#{job.id}').hide();$('apply_job_#{job.id}').show()"}, {:id => "apply_job_#{job.id}",:class => 'button_text'} %>
                                        <%= image_tag "spinner.gif", {:id => "spinner_job_#{job.id}", :style => "display:none;"} %></td>
         </tr>
         <tr>
-          <td class="separator_bottom text-left" colspan="4"><%= truncate(job.body,100) %></td>
+          <td class="separator_bottom text-left" colspan="4"><%= job.body %></td>
         </tr>
       </tbody>
     <% end %>

@@ -28,7 +28,8 @@ class JobsController < ApplicationController
 
   def apply
     job_title = Job.find(params[:id]).job_title
-    response = request_webservius('/API/apply_job', {:user_id => session[:fellownation_user_id], :app_key => FKEY, :job_title => job_title })
+    response = request_webservius('/API/apply_job', {:user_id => session[:fellownation_user_id], :app_key => FKEY, :job_title => job_title },:post)
+   
     result = ActiveSupport::JSON.decode(response.body)["results"]
     render :update do |page|
       if Net::HTTPSuccess && result == "success"

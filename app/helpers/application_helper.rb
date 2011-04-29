@@ -7,7 +7,8 @@ module ApplicationHelper
     else
       oauth = request_webservius('/API/user_info', {:user_id => params["user_id"] }).body unless params["user_id"].blank?
     end
-    ActiveSupport::JSON.decode(oauth)["results"]["photo"]
+   candidate_photo = ActiveSupport::JSON.decode(oauth)["results"]["photo"]
+   candidate_photo.blank? ? '/images/avatar-50.png' : candidate_photo
   end
 
   def show_badges(user_id)

@@ -7,8 +7,8 @@ if RAILS_ENV == 'development' || RAILS_ENV == 'test' || RAILS_ENV == 'cucumber'
   WEBSERVIUS_KEY = "Dbsv8wmfax2J5xzAK7_KZ7qrXIiXWR1j"
 elsif RAILS_ENV == 'staging'
   SITE = 'http://staging.fellownation.com'
-  FKEY = "MZqY1iE9DruYDwZXYDf9"
-  FSECRET = "p53EnAjEcIZ_5d4hAtwhe4wjKsTH0fUG"
+  FKEY = "xnlljFSjIFSYY2shESeL"
+  FSECRET = "ioZqVFmguJHPuJfY6khduuxjlEQDBewYAICO1qkO"
   IFRAME_HELPER = "http://apps.staging.fellownation.com/iframe_helper.html"
   WEBSERVIUS_PATH = "http://api.staging.fellownation.com"
   WEBSERVIUS_KEY = "mGvdSViQphKO_m-WB9Ed3pHcXgW_N5cX"

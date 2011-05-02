@@ -47,7 +47,7 @@
         end %>
       </span> <%= image_tag 'spinner.gif', :style => "display: none", :id => 'spinner_like_'+message["id"].to_s %> |
 
-      <%= link_to "Comment", "#", :onclick => "jQuery('#comment_#{message["id"].to_s}').toggle()", :class => "a_href" %>
+<%= link_to "Comment", "#", :onclick => "jQuery('#comment_#{message["id"].to_s}').toggle();return false;", :class => "a_href" %>
       <% if message['user_id'].to_s == session[:fellownation_user_id] %>
         | <span id="delete">
 

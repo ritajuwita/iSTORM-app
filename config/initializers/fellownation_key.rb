@@ -11,7 +11,7 @@ elsif RAILS_ENV == 'staging'
   FSECRET = "htFCtczsru7mRArtlIrX6Wbazhbx1YlrD0pIhwMw"
   IFRAME_HELPER = "http://apps.staging.fellownation.com/iframe_helper.html"
   WEBSERVIUS_PATH = "http://api.staging.fellownation.com"
-  WEBSERVIUS_KEY = "310LphNaOkbYd2-gcmyNemo-Dl5LGZ-g"
+  WEBSERVIUS_KEY = "mGvdSViQphKO_m-WB9Ed3pHcXgW_N5cX"
 else
   SITE = 'http://fellownation.com'
   FKEY = "LsFhkv0Ukc8fBI9lwbg"

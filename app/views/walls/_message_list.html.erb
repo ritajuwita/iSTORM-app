@@ -37,7 +37,7 @@
         end %>
       </span> <%= image_tag 'spinner.gif', :style => "display: none", :id => 'spinner_favorite_'+message["id"].to_s %>
       </div>
-      <%= message["message"] %> <br />
+      <%= show_commenter(message["user_id"]) %><%= message["message"] %> <br />
       <%= timeago(message["created_at"].to_time) %>
       <span id="like_<%= message['id'].to_s %>">
         <%= if message["likes"].blank? || !message["likes"].collect{|x| x["user_id"].to_s }.include?(session[:fellownation_user_id])

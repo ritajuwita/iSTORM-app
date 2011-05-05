@@ -10,8 +10,8 @@
       <%= show_badges(comment["user_id"], "width:36px") %>
     </div>
     <div class="float_left other_user_comment">
-      <b><%= show_commenter(comment["user_id"]) %></b> <%= comment["comment"] %><br/>
-      <%= timeago(comment["created_at"].to_time) %>
+      <%= show_commenter(comment["user_id"]) %><%= comment["comment"] %><br/>
+      <%= timeago(comment["created_at"].to_time, {:style => "color:#ffffff"}) %>
     </div>
     <% if comment['user_id'].to_s == session[:fellownation_user_id] %>
       <span id="delete">

@@ -67,7 +67,7 @@
       <div id="list_favorite_<%= message["id"] %>">
         <%= render :partial => "list_favorite.html", :locals => { :favorites => message["favorites"] } %>
       </div>
-      <% unless message["comments"].blank? %>
+      <% if !message["comments"].blank? && message["comments"].size > 3 %>
         <div class="wallContent comment">
           <%= link_to_remote 'View all comments', { :url => show_all_comments_path(message["id"]), :method => :get,
             :loading => "$('spinner_comment_#{message["id"]}').show(); $('link_comment_#{message["id"]}').hide()",

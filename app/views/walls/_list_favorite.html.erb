@@ -4,7 +4,11 @@
     names << (x["user_id"].to_s == session[:fellownation_user_id] ? "You" : x["name"])
   end
 %>
-  <div class="wallContent star">
-    <%= names.to_sentence  %>
+ <div class="wallContent star">
+    favored by <% names.each_with_index do |name, index| %>
+     <b><%= name  %></b>
+      <%= ', ' if index < names.size - 2 %>
+      <%= ' and ' if index == names.size - 2 %>
+    <% end %>
   </div>
 <% end %>

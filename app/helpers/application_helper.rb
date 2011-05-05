@@ -11,10 +11,10 @@ module ApplicationHelper
    candidate_photo.blank? ? '/images/avatar-50.png' : candidate_photo
   end
 
-  def show_badges(user_id)
+  def show_badges(user_id, style=nil)
     response = request_webservius('/API/show_badges', {:user_id => user_id }).body
     link = ActiveSupport::JSON.decode(response)["results"]["link"]
-    image_tag link || '', :alt=>"avatar", :class=>"badge"
+    image_tag link || '', :alt=>"avatar", :class=>"badge", :style => style
   end
 
   def timeago(time, options = {})
